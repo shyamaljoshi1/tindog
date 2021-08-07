@@ -26,7 +26,9 @@
 
 </head>
 
-<body>
+<body onload="loadFun()">
+
+    <div id="loading"> </div>
 
     <section id="title">
         <div class="container-fluid">
@@ -231,6 +233,14 @@
         <p>© Copyright 2021 <i class="fas fa-fire"></i>tindog</p>
 
     </footer>
+    
+    <script>
+        var preload = document.getElementById('loading');
+
+        function loadFun() {
+            preload.style.display = 'none';
+        }
+    </script>
 
 
 </body>
